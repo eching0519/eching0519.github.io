@@ -1,18 +1,7 @@
-export type ProgrammingLanguage =
-  | 'Python'
-  | 'JavaScript'
-  | 'TypeScript'
-  | 'PHP'
-  | 'HTML'
-  | 'CSS'
-  | 'C#'
-  | 'Java'
-  | 'Objective-C'
-  | 'Dart';
+export type ProgrammingLanguage = 'Python' | 'TypeScript' | 'HTML' | 'CSS' | 'C#' | 'Dart';
 
 export type Framework =
   | 'React.JS'
-  | 'React Native'
   | 'Vite'
   | 'Next.js'
   | 'Material UI'
@@ -22,13 +11,10 @@ export type Framework =
   | 'Node.JS'
   | 'NestJS'
   | 'Socket.IO'
-  | 'Web3'
-  | 'ethers.js'
-  | 'Prisma'
   | 'Flutter'
-  | 'VBA';
+  | 'Flask';
 
-export type Database = 'MySQL' | 'MongoDB' | 'Microsoft SQL';
+export type Database = 'MySQL' | 'Microsoft SQL';
 
 export type Cloud = 'Azure' | 'AWS';
 
@@ -48,7 +34,6 @@ export type Skill =
   | 'Firebase'
   | 'REST APIs'
   | 'GraphQL'
-  | 'Object-Oriented Programming'
   | 'Agile Methodologies'
   | 'WordPress'
   | 'Web Scraping';

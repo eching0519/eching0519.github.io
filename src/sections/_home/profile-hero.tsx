@@ -67,7 +67,7 @@ export function ProfileHero({ sx, ...other }: BoxProps) {
       }}
     >
       <AnimatedDiv>
-        <Typography variant="h1">
+        <Typography variant="h2">
           {'Hi! This is '}
           <Box component="span" sx={{ color: 'primary.main', textDecoration: 'underline' }}>
             {_profile.name}

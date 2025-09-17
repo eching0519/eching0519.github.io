@@ -120,6 +120,6 @@ type ApplyPaginationProps = {
 function applyPagination({ inputData, page }: ApplyPaginationProps) {
   const start = Math.max(page - 1, 0) * ITEM_PER_PAGE;
   const end = start + ITEM_PER_PAGE;
-  console.log(start, end);
+
   return inputData.slice(start, end);
 }

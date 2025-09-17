@@ -8,6 +8,35 @@ import { ProjectCategory } from 'src/types/project-category';
 
 export const _sideProjects: ISideProjectProps[] = [
   {
+    id: '18a7b012-525b-43b4-9101-0b02b1e30a8f',
+    coverUrl: `${CONFIG.assetsDir}/assets/images/side-project/StockerRemaster/cover.webp`,
+    title: 'Stocker Remaster AI Chatbot',
+    isAcademicProject: false,
+    subtitle: 'Financial Advisor AI Agent Embedded in Stocker Remaster',
+    description:
+      'An advanced AI-powered financial assistant designed to deliver personalized investment insights and strategic recommendations. Equipped with a suite of self-engineered analytical tools, it leverages LangGraph to perform deep market analysis, interpret user input, and provide actionable feedback.',
+    lastUpdatedAt: 'Jan 17, 2025',
+    category: ProjectCategory.ai,
+    links: [
+      {
+        url: 'https://apps.apple.com/hk/app/stocker-remaster/id6450699189',
+        title: 'iOS',
+      },
+      {
+        url: 'https://play.google.com/store/apps/details?id=com.nanistudio.stocker3',
+        title: 'Android',
+      },
+    ],
+    technicalSkills: [
+      {
+        category: 'Programming Language',
+        skills: ['Python'],
+      },
+      { category: 'Library', skills: ['LangChain', 'Flask'] },
+      { category: 'Tools', skills: ['Git', 'GCP'] },
+    ],
+  },
+  {
     id: '1b534008-22ba-473d-a889-b4fe9559c661',
     coverUrl: `${CONFIG.assetsDir}/assets/images/side-project/BossMind/cover.png`,
     title: 'BossMind Media',
@@ -15,33 +44,20 @@ export const _sideProjects: ISideProjectProps[] = [
     description:
       "BossMind Media is a well-known Hong Kong digital platform focused on business and finance. It offers expert analysis on markets, IPOs, real estate, and economic trends, helping readers stay informed and financially literate. The site is popular for its insights into Hong Kong and China's financial landscape.",
     lastUpdatedAt: '20 Apr 2025',
-    category: ProjectCategory.uiDesign,
+    category: ProjectCategory.fullStackWeb,
     links: [
       {
         url: 'https://www.figma.com/design/sxzfSW1bB6pzghGukFqGC8/Bossmind-Wireframe?node-id=115-2666&t=AV3ehsnCUt7ZO6tO-1',
         title: 'Wireframe',
       },
+      {
+        url: 'http://bossmindmedia.com/',
+        title: 'Website',
+      },
     ],
     technicalSkills: [
       { category: 'Tools', skills: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'] },
     ],
-  },
-  {
-    id: '6335c1c6-f787-4dfe-a1fc-46fc975bf9f4',
-    coverUrl: `${CONFIG.assetsDir}/assets/images/side-project/SpeedyForeignLabour/cover.png`,
-    title: 'Speedy Foreign Labour',
-    subtitle: 'Foreign labor recruitment agency',
-    description:
-      'Speedy Foreign Labour is a Hong Kong-based recruitment agency that connects employers with qualified foreign domestic helpers and laborers. It offers services like visa assistance, contract management, and orientation, ensuring compliance with local labor laws. The agency focuses on efficient, reliable hiring solutions for households and businesses needing overseas workers.',
-    lastUpdatedAt: '20 Apr 2025',
-    category: ProjectCategory.fullStackWeb,
-    links: [
-      {
-        url: 'https://www.figma.com/design/sxzfSW1bB6pzghGukFqGC8/Bossmind-Wireframe?node-id=115-2666&t=AV3ehsnCUt7ZO6tO-1',
-        title: 'Website',
-      },
-    ],
-    technicalSkills: [{ category: 'Tools', skills: ['PHP', 'HTML', 'CSS', 'MySQL', 'WordPress'] }],
   },
   {
     id: '886cd23d-cb44-4084-ad6b-12be055388d7',
@@ -68,7 +84,7 @@ export const _sideProjects: ISideProjectProps[] = [
         category: 'Programming Language',
         skills: ['Flutter'],
       },
-      { category: 'Backend Framework', skills: ['Node.JS', 'Express', 'LangChain'] },
+      { category: 'Backend Framework', skills: ['Node.JS', 'Express'] },
       { category: 'Tools', skills: ['GCP', 'Firebase', 'Git'] },
     ],
   },
@@ -85,27 +101,7 @@ export const _sideProjects: ISideProjectProps[] = [
     technicalSkills: [
       {
         category: 'Programming Language',
-        skills: ['PHP', 'JavaScript', 'HTML', 'CSS'],
-      },
-      { category: 'Database', skills: ['MySQL'] },
-      { category: 'Library', skills: ['WordPress', 'WooCommerce'] },
-      { category: 'Software Development', skills: ['REST APIs'] },
-    ],
-  },
-  {
-    id: '09e0706b-d22a-42e1-93b4-4388f30f6883',
-    coverUrl: `${CONFIG.assetsDir}/assets/images/side-project/NailCrafted/cover.png`,
-    title: 'NailCrafted',
-    subtitle: 'Online Store for Handmade Nail Patches',
-    description:
-      'NailCrafted is an online store specializing in handmade nail patches. With a seamless WooCommerce platform, NailCrafted provides an easy shopping experience, secure payments, and reliable shipping, making it convenient for customers to find and order the perfect set of nails.',
-    lastUpdatedAt: '12 Jun 2024',
-    category: ProjectCategory.fullStackWeb,
-    links: [{ url: 'https://nailcrafted.com/', title: 'Website' }],
-    technicalSkills: [
-      {
-        category: 'Programming Language',
-        skills: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+        skills: ['HTML', 'CSS'],
       },
       { category: 'Database', skills: ['MySQL'] },
       { category: 'Library', skills: ['WordPress', 'WooCommerce'] },
@@ -126,7 +122,7 @@ export const _sideProjects: ISideProjectProps[] = [
       {
         category: 'Software Development',
         skills: [
-          'JavaScript',
+          'TypeScript',
           'HTML',
           'CSS',
           'Next.js',
@@ -136,29 +132,6 @@ export const _sideProjects: ISideProjectProps[] = [
           'Firebase',
         ],
       },
-    ],
-  },
-  {
-    id: 'b3b1942c-35ef-4983-8b10-6f85b39ef335',
-    coverUrl: `${CONFIG.assetsDir}/assets/images/side-project/OneNFT/cover.png`,
-    title: 'OneNFT',
-    subtitle: 'Borrow & Lend on the NFT Liquidity Protocol',
-    description:
-      'OneNFT is a platform designed to facilitate borrowing and lending through the NFT Liquidity Protocol. Users can use their NFTs as collateral to secure crypto loans, with the ability to reclaim their NFTs once the loan is repaid. The next stage of development is pending client initiation.',
-    lastUpdatedAt: 'Sep 5, 2023',
-    pending: true,
-    category: ProjectCategory.frontend,
-    links: [{ url: 'https://one-nft-react.vercel.app/', title: 'Demo Website' }],
-    technicalSkills: [
-      {
-        category: 'Programming Language',
-        skills: ['TypeScript', 'HTML', 'CSS'],
-      },
-      {
-        category: 'Frontend Framework',
-        skills: ['Next.js', 'React.JS', 'Material UI', 'Web3', 'ethers.js'],
-      },
-      { category: 'Software Development', skills: ['Git', 'Postman'] },
     ],
   },
   {
@@ -218,7 +191,7 @@ export const _sideProjects: ISideProjectProps[] = [
     technicalSkills: [
       {
         category: 'Programming Language',
-        skills: ['Python', 'PHP', 'Objective-C', 'C#'],
+        skills: ['Python', 'C#'],
       },
       {
         category: 'Frontend Framework',

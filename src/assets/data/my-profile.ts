@@ -7,7 +7,7 @@ import { CONFIG } from 'src/config-global';
 
 export const _profile: Profile = {
   name: 'Yannis',
-  jobTitle: 'Full Stack Developer',
+  jobTitle: 'Software Developer & Junior Data Analyst',
   location: 'Calgary, AB',
   description:
     'Based in Calgary. Focusing on writing clean, efficient code and a keen eye for detail. I excel at identifying potential issues early in the development process, enabling the delivery of high-quality, scalable solutions.',
@@ -28,27 +28,27 @@ export const _profile: Profile = {
 export const _technicalSkills: ITechnicalSkill[] = [
   {
     category: 'Programming Language',
-    skills: ['Python', 'TypeScript', 'JavaScript', 'C#', 'Java', 'PHP'],
+    skills: ['Python', 'TypeScript'],
+  },
+  {
+    category: 'Library',
+    skills: ['LangChain', 'MediaPipe', 'Numpy', 'Pandas'],
   },
   {
     category: 'Frontend Framework',
-    skills: ['React.JS', 'React Native', 'Vite', 'Material UI'],
+    skills: ['React.JS', 'Vite', 'Material UI'],
   },
   {
     category: 'Backend Framework',
     skills: ['Express', 'Node.JS', 'ASP.NET Core'],
   },
   {
-    category: 'Plugin',
-    skills: ['WooCommerce'],
-  },
-  {
     category: 'Database',
-    skills: ['MySQL', 'Microsoft SQL', 'MongoDB'],
+    skills: ['MySQL', 'Microsoft SQL'],
   },
   {
     category: 'Tools',
-    skills: ['Git', 'Postman', 'Jira', 'VS Code'],
+    skills: ['Git'],
   },
   {
     category: 'Cloud',
@@ -56,7 +56,7 @@ export const _technicalSkills: ITechnicalSkill[] = [
   },
   {
     category: 'Software Development',
-    skills: ['REST APIs', 'Agile Methodologies', 'Object-Oriented Programming', 'Firebase'],
+    skills: ['REST APIs', 'Agile Methodologies'],
   },
 ];
 
@@ -83,6 +83,17 @@ export const _educationRecords: IEducationProps[] = [
       'Ranked #26 in QS World University Rankings for Computer Science & Information Systems 2022',
     ],
     wesVerified: true,
+  },
+  {
+    id: 'sait',
+    title: 'Data Analytics',
+    institution: 'Southern Alberta Institute of Technology',
+    startDate: '1 May 2025',
+    endDate: 'Present',
+    location: 'Calgary, AB',
+    logo: `${CONFIG.assetsDir}/assets/icons/brands/sait.svg`,
+    descriptions: ['Cumulative GPA: 4.0 / 4.0'],
+    wesVerified: false,
   },
 ];
 

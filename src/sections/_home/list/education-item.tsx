@@ -1,5 +1,7 @@
 import type { IEducationProps } from 'src/types/education';
 
+import dayjs from 'dayjs';
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import List from '@mui/material/List';
@@ -45,7 +47,10 @@ export function EducationItem({ education, isVertical }: Props) {
         </Typography>
 
         <Typography variant="body2">
-          {fDate(education.startDate, 'MMM YYYY')} - {fDate(education.endDate, 'MMM YYYY')}
+          {fDate(education.startDate, 'MMM YYYY')} -{' '}
+          {dayjs(education.endDate).isValid()
+            ? fDate(education.endDate, 'MMM YYYY')
+            : education.endDate}
         </Typography>
       </Box>
       <Box

@@ -1,5 +1,7 @@
 import type { IProfessionalExperienceProps } from 'src/types/professional-experience';
 
+import dayjs from 'dayjs';
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import List from '@mui/material/List';
@@ -41,7 +43,10 @@ export function ProfessionalExperienceItem({ experience, isVertical }: Props) {
         </Typography>
 
         <Typography variant="body2">
-          {fDate(experience.startDate, 'MMM YYYY')} - {fDate(experience.endDate, 'MMM YYYY')}
+          {fDate(experience.startDate, 'MMM YYYY')} -{' '}
+          {dayjs(experience.endDate).isValid()
+            ? fDate(experience.endDate, 'MMM YYYY')
+            : experience.endDate}
         </Typography>
       </Box>
       <Box

@@ -7,6 +7,7 @@ import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll
 import { EducationView } from '../education';
 import { ProfileHero } from '../profile-hero';
 import { SideProjectsView } from '../side-projects';
+import { DataAnalysisView } from '../data-analysis';
 import { CertificationsView } from '../certifications';
 import { ProfessionalExperiencesView } from '../professional-experience';
 
@@ -37,6 +38,8 @@ export function HomeView() {
       <BackToTop />
 
       <ProfileHero />
+
+      <DataAnalysisView />
 
       <SideProjectsView />
 
